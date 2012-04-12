@@ -30,6 +30,8 @@ module Placeholdit
       image_tag
     end
 
+    alias :placeholdit :placeholdit_image_tag
+
     private
 
       def remove_hex_pound(str)

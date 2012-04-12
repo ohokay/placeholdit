@@ -34,6 +34,10 @@ The same placeholder image with a blue background and red text (not recommended)
 
 		$ <%= placeholdit_image_tag "500", text: "Buy me!", background_color: '#004eff', text_color: '#ff0000' %>
 
+Alternatively, calling placeholdit will work as well:
+
+		$ <%= placeholdit "500" %>
+
 
 ## Contributing
 
