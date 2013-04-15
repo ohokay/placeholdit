@@ -11,7 +11,8 @@ module Placeholdit
         :alt => (opts[:text] || "A placeholder image"),
         :class => "placeholder",
         :height => (size.split('x')[1] || size.split('x')[0]),
-        :width => size.split('x')[0]
+        :width => size.split('x')[0],
+        :title => opts[:title]
       }.merge!(opts)
 
       # Placehold.it preferences
@@ -25,7 +26,9 @@ module Placeholdit
         src += "&text=#{config[:text]}"
       end
 
-      image_tag = "<img src='#{src}' alt='#{config[:alt]}' class='#{config[:class]}' height='#{config[:height]}' width='#{config[:width]}' />"
+      image_tag = "<img src='#{src}' alt='#{config[:alt]}' class='#{config[:class]}' height='#{config[:height]}' width='#{config[:width]}'"
+      image_tag += " title='#{config[:title]}'" if config[:title]
+      image_tag += " />"
       return image_tag.html_safe if defined?(Rails)
       image_tag
     end
