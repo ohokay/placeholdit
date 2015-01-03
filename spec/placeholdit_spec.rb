@@ -42,4 +42,8 @@ describe Placeholdit::ViewHelpers do
     view.placeholdit("500", text_color: 'fff', background_color: '000').should == "<img src='http://placehold.it/500/000/fff' alt='A placeholder image' class='placeholder' height='500' width='500' />"
   end
 
+  it "should accept style" do
+    view.placeholdit_image_tag("500", style: "float:right;").should == "<img src='http://placehold.it/500' alt='A placeholder image' class='placeholder' height='500' width='500' style='float:right;' />"
+  end
+
 end
