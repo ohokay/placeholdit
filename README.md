@@ -20,7 +20,11 @@ Or install it yourself as:
 
 A basic 500x500 placeholder image:
 		
-	<%= placeholdit_image_tag "500" %>
+	<%= placeholdit_image_tag "500x500" %>
+
+A basic 250 width 500 height placeholder image:
+    
+  <%= placeholdit_image_tag "250x500" %>
 
 The same placeholder image with custom text:
 
@@ -29,10 +33,6 @@ The same placeholder image with custom text:
 The same placeholder image with a blue background:
 
 	<%= placeholdit_image_tag "500", text: "Buy me!", background_color: '#004eff' %>
-
-The same placeholder image with a blue background, floated right:
-
-	<%= placeholdit_image_tag "500", text: "Buy me!", background_color: '#004eff' style:'float:right;'%>
 
 The same placeholder image with a blue background and red text (not recommended):
 
