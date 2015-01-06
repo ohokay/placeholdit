@@ -28,6 +28,7 @@ module Placeholdit
 
       image_tag = "<img src='#{src}' alt='#{config[:alt]}' class='#{config[:class]}' height='#{config[:height]}' width='#{config[:width]}'"
       image_tag += " title='#{config[:title]}'" if config[:title]
+      image_tag += " style='#{config[:style]}'" if config[:style]
       image_tag += " />"
       return image_tag.html_safe if defined?(Rails)
       image_tag

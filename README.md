@@ -30,6 +30,10 @@ The same placeholder image with a blue background:
 
 	<%= placeholdit_image_tag "500", text: "Buy me!", background_color: '#004eff' %>
 
+The same placeholder image with a blue background, floated right:
+
+	<%= placeholdit_image_tag "500", text: "Buy me!", background_color: '#004eff' style:'float:right;'%>
+
 The same placeholder image with a blue background and red text (not recommended):
 
 	<%= placeholdit_image_tag "500", text: "Buy me!", background_color: '#004eff', text_color: '#ff0000' %>
