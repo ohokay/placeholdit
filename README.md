@@ -22,9 +22,9 @@ A basic 500x500 placeholder image:
 		
 	<%= placeholdit_image_tag "500x500" %>
 
-A basic 250 width 500 height placeholder image:
-    
-  <%= placeholdit_image_tag "250x500" %>
+A basic 250 width 500 height placeholder image”
+
+	<%= placeholdit_image_tag "250x500" %>
 
 The same placeholder image with custom text:
 
